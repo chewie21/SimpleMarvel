@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/scripts.js" defer></script>
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md justify-content-between shadow">
+            <div class="container firstBar">
+                <img src="./img/MarvelLogo.svg" style="height: 38px;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                   <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <form class="form-inline">
+                        <input list="movies" value="" class="form-control mr-md-2 inputMovie" placeholder="Movie">
+                            <datalist id="movies">
+                            </datalist>
+                        <button class="btn btn-danger my-2 my-md-0 formButton btn-red">Find</button>
+                    </form>
+                </div>
+            </div>           
+        </nav>    
+    </header>
+    <main>
+        <!--Карточный стол-->
+        <div class="title">
+            <div class="row">
+                <div class="col-6 col1 titleCol">
+
+                </div>
+                <div class="col-6 col2 titleCol">
+
+                </div>
+            </div>
+            <img class="image rounded titleImg" src="./img/MarvelLogoTitle.svg">
+            <div class="row">
+                <div class="col-6 col3 titleCol">
+
+                </div>
+                <div class="col-6 col4 titleCol">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 54px;">
+            <h1 class="display-4 text-center" style="padding: 15px 0 15px 0;">
+                <span class="title-text"></span>
+            </h1>
+            <div class="rounded hide filters p-1">
+                <div class="row justify-content-around p-1">
+                    <div class="col-11 m-1">
+                        <div class="row">
+                            <div class="col-3">
+                                <select class="form-control inputSpecies"> 
+                                    <option selected value="">Species...</option>
+                                  </select>
+                            </div>
+                            <div class="col-3">
+                                <select class="form-control inputGender">
+                                    <option selected value="">Gender...</option>
+                                  </select>
+                            </div>
+                            <div class="col-3">
+                                <select class="form-control inputStatus">
+                                    <option selected value="">Status...</option>
+                                  </select>
+                            </div>
+                            <div class="col-3">
+                                <select id="inputState" class="form-control inputCitizenship">
+                                    <option selected value="">Citizenship...</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto m-1">
+                        <button class="btn btn-danger btn-red"><i class="fas fa-reply"></i></button>
+                    </div>
+                </div>    
+            </div>
+            <div class="card-deck">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container justify-content-center">
+                <div style="color: #f8f9fa">© Никаие права не защищены.</div>
+            </div>           
+        </nav>
+    </footer>
+    
+    <!--Модальное окно-->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark">     
+                <div class="row no-gutters">
+                    <div class="col-md-6 modal-img">
+                        <img class="card-img" src="" alt="Heroes image">
+                    </div>
+                    <div class="col-md-6 modal-body">                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-backdrop bg-dark show" style="opacity: 1"></div>
+</body>
+</html>

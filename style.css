@@ -1,0 +1,144 @@
+.hide {
+    display: none;
+}
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+.active-filters {
+    box-shadow: 0 .5rem 1rem #ED1D24 !important;
+    border: 1px solid #ED1D24!important;
+}
+.error-filters {
+    border: 1px solid #ED1D24!important;
+}
+.success-filters {
+    border: 1px solid #20c997!important;
+}
+.card {
+    text-align: center;
+    min-width: 255px !important;
+    max-width: 255px;
+    margin-top: 15px;
+    margin-bottom: 15px !important;
+    color: #f8f9fa !important;
+    border: none !important;
+}
+.modal-dialog {
+    max-width: 1140px !important;
+    min-width: 720px !important;
+}
+.modal-content {
+    color: #f8f9fa !important;
+}
+.card-deck {
+    display: flex !important;
+    flex-flow: row wrap !important;
+}
+.activeCard {
+    box-shadow: 0 .5rem 1rem #ED1D24 !important;
+    border: 1px solid #ED1D24!important;
+    color: #ED1D24 !important;
+}
+.main-text {
+    display: none !important;
+}
+.main-title {
+    display: block;
+}
+.modal-text {
+    display: block !important;
+}
+.modal-img {
+    align-self: center;
+}
+.card-li {
+    background: #ED1D24 !important;
+    color: #f8f9fa !important;
+}
+.btn-red {
+    background: #ED1D24 !important;
+    color: #f8f9fa !important;
+}
+html, body {
+display: flex !important;
+flex-direction: column !important;
+height: 100% !important;
+}
+main {
+flex: 1 0 auto !important;
+}
+footer {
+flex: 0 0 auto !important;
+}
+.title {
+    color: #f8f9fa !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1051;
+}
+.titleCol {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.titleImg {
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .title {
+        width: 768px;
+    }
+    .card {
+        min-width: 290px !important;
+        max-width: 290px;
+    }
+    .modal-dialog {
+        max-width: 960px !important;
+        min-width: 720px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        width: 90%;
+    }
+    .card {
+        min-width: 330px !important;
+        max-width: 300px;
+    }
+    .modal-dialog {
+        max-width: 720px !important;
+        min-width: 720px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .inputMovie {
+        width: 100% !important;
+        margin-top: 16px !important;
+    }
+    .formButton {
+        width: 100% !important;
+    }
+    .card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .main-text {
+        display: block !important;
+    }
+    .main-title {
+        display: none !important;
+    }
+}
